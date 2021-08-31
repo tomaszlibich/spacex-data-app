@@ -1,14 +1,14 @@
 import renderer from 'react-test-renderer';
-import App from "./App";
+import { LaunchesMain } from "./launches-main";
 
 let component;
 let tree: any;
 
-describe("App", () => {
+describe("LaunchesMain", () => {
   describe('When component is rendered', () => {
     beforeEach(() => {
       component = renderer.create(
-        <App />,
+        <LaunchesMain />,
       );
       tree = component.toJSON();
     });

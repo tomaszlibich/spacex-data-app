@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LaunchesList When component is rendered should match the snapshot 1`] = `
+<div
+  className="list"
+>
+  <p
+    className="noData"
+  >
+    No launch data available...
+  </p>
+</div>
+`;

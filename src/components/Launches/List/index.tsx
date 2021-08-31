@@ -23,15 +23,16 @@ export const LaunchesList = () => {
 
   const filteredAndSortedLaunches = !!search
     ? sortedLaunches.filter((launch: Launch) =>
-        launch.mission_name.toLowerCase().includes(search.toLowerCase())
-      )
+      launch.mission_name.toLowerCase().includes(search.toLowerCase())
+    )
     : sortedLaunches;
 
   return (
     <div className={styles.list}>
-      <ul>
+      {!filteredAndSortedLaunches?.length && <p className={styles.noData}>No launch data available...</p>}
+      {filteredAndSortedLaunches?.length > 0 && <ul>
         {filteredAndSortedLaunches?.map((launch: Launch) => {
-          const id = launch.flight_number.toString();
+          const id = launch.flight_number?.toString();
 
           return (
             <li key={id} className="animate__animated animate__flipInX">
@@ -63,7 +64,7 @@ export const LaunchesList = () => {
             </li>
           );
         })}
-      </ul>
+      </ul>}
     </div>
   );
 };

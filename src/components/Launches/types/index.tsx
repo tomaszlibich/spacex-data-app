@@ -27,7 +27,7 @@ export type Launch = {
     video_link: string;
     wikipedia: string;
   };
-  mission_id: [];
+  mission_id: string[];
   mission_name: string;
   rocket: {
     rocket_id: string;

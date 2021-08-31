@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LaunchesSorting When component is rendered should match the snapshot 1`] = `
+<div
+  className="sorting"
+>
+  <button
+    className=""
+    onClick={[Function]}
+  >
+    Sort by name
+  </button>
+  <button
+    className=""
+    onClick={[Function]}
+  >
+    Sort by date
+  </button>
+</div>
+`;

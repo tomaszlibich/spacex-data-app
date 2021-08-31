@@ -1,0 +1,50 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LaunchesContainer When component is rendered should match the snapshot 1`] = `
+Array [
+  <h1
+    className="listHeader"
+  >
+    Most recent SpaceX rocket launches
+  </h1>,
+  <div
+    className="actions"
+  >
+    <div
+      className="sorting"
+    >
+      <button
+        className=""
+        onClick={[Function]}
+      >
+        Sort by name
+      </button>
+      <button
+        className=""
+        onClick={[Function]}
+      >
+        Sort by date
+      </button>
+    </div>
+    <div
+      className="search"
+    >
+      <input
+        name="search"
+        onChange={[Function]}
+        placeholder="Search..."
+        type="text"
+      />
+    </div>
+  </div>,
+  <div
+    className="list"
+  >
+    <p
+      className="noData"
+    >
+      No launch data available...
+    </p>
+  </div>,
+]
+`;
