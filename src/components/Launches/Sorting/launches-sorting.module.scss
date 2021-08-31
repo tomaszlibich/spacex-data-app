@@ -1,0 +1,28 @@
+.sorting {
+  margin-bottom: var(--spacing-medium);
+
+  button {
+    background: var(--colour-blue-nasa);
+    border-radius: 4px;
+    border: solid 1px var(--colour-blue-nasa);
+    color: white;
+    cursor: pointer;
+    margin: 0 var(--spacing-medium) var(--spacing-small) 0;
+    padding: var(--spacing-medium);
+    position: relative;
+
+    &:hover {
+      background: var(--colour-grey-space-light);
+      border-color: var(--colour-grey-space-light);
+    }
+
+    &:active {
+      top: 1px;
+    }
+
+    &.selected {
+      background: black;
+      border: solid 1px white;
+    }
+  }
+}

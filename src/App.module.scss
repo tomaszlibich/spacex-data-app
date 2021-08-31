@@ -1,0 +1,16 @@
+.App {
+  margin: 0 auto;
+  width: 35%;
+
+  @media only screen and (max-width: 1920px) {
+    width: 50%;
+  }
+
+  @media only screen and (max-width: 1200px) {
+    width: 75%;
+  }
+
+  @media only screen and (max-width: 760px) {
+    width: 85%;
+  }
+}
