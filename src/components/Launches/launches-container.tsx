@@ -24,7 +24,7 @@ export const LaunchesContainer = () => {
           const fetchedLaunches = await getLaunches();
 
           fetchedLaunchesRef.current = fetchedLaunches;
-          console.warn("LAUNCHES", fetchedLaunches);
+
           setLaunches(fetchedLaunches);
         } catch (e) {
           console.error(e);
